@@ -57,7 +57,7 @@ ws.onmessage = async message => {
             const tim = Date.now();
             const payload = { code: bum };
             try {
-                const response = await got.patch(`https://canary.discord.com/api/v8/guilds/${serverid}/vanity-url`, {
+                const response = await got.patch(`https://canary.discord.com/api/v7/guilds/${serverid}/vanity-url`, {
                     json: payload,
                     headers: {
                         Authorization: sniptkn,
